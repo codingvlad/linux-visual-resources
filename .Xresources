@@ -1,0 +1,128 @@
+! Copyright (c) 2016-present Arctic Ice Studio <development@arcticicestudio.com>
+! Copyright (c) 2016-present Sven Greb <code@svengreb.de>
+
+! Project:    Nord XResources
+! Version:    0.1.0
+! Repository: https://github.com/arcticicestudio/nord-xresources
+! License:    MIT
+
+! Black
+#define normalBlack #636E72
+#define brightBlack #636E72
+
+! White
+#define normalWhite #ECEFF4
+#define brightWhite #ECEFF4
+
+! Red
+#define normalRed #A3424B
+#define brightRed #BD5C65
+
+! Yellow
+#define normalYellow #7D4903
+#define brightYellow #7D4903
+
+! Green
+#define normalGreen #004D32
+#define brightGreen #004D32
+
+! Blue
+#define normalBlue #2A4055
+#define brightBlue #2A4055
+
+! Magenta
+#define normalMagenta #4D3348
+#define brightMagenta #4D3348
+
+! Cyan
+#define normalCyan #658DB3
+#define brightCyan #658DB3
+
+! Others
+#define lightGrey #D1D1D1
+!#define darkGrey0 #2D3436
+#define darkGrey #0C0D0E
+
+! Normal colors
+*.color0: normalBlack
+*.color1: normalRed
+*.color2: normalYellow
+*.color3: normalGreen
+*.color4: normalBlue
+*.color5: normalMagenta
+*.color6: normalCyan
+*.color7: normalWhite
+
+! Bright colors
+*.color8: brightBlack
+*.color9: brightRed
+*.color10: brightYellow
+*.color11: brightGreen
+*.color12: brightBlue
+*.color13: brightMagenta
+*.color14: brightCyan
+*.color15: brightWhite
+
+*.foreground:   darkGrey
+*.background:   lightGrey
+*.cursorColor:  darkGrey
+!*fading: 130
+!*fadeColor: darkGrey
+
+
+! Font
+URxvt.font: xft:JetBrains Mono:style=Regular:pixelsize=16:antialias=true:hinting:true
+URxvt.boldfont: xft:JetBrains Mono:style=Bold:pixelsize=16:antialias=true:hinting:true
+URxvt.italicfont: xft:JetBrains Mono:style=Italic:pixelsize=16:antialias=true:hinting:true
+URxvt.bolditalicfont: xft:JetBrains Mono:style=Bold Italic:pixelsize=16:antialias=true:hinting:true
+!URxvt.font: xft:Inconsolata Regular:family=mono:pixelsize=16:antialias=true:hinting:true
+
+! Xft settings
+Xft.autohint:0
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+Xft.dpi: 96
+Xft.hintstyle: hintslight
+Xft.hinting: true
+Xft.antialias: true
+
+! URxvt Appearence
+URxvt*depth: 32
+!URxvt*transparent: true
+!URxvt*shading: 90
+URxvt*scrollBar: False
+URxvt*scrollTtyOutput: False
+URxvt*scrollTtyKeypress: False
+URxvt*secondaryScroll: False
+URxvt*borderLess: false
+*internalBorder: 15
+*externalBorder: 0
+*buffered: true
+*iso14755: false
+*clipboard.autocopy: true
+URxvt*saveLines: 2048
+
+! Keybinds and extensions
+perl-ext-common:  default,clipboard,url-select,keyboard-select!, tabbed
+*keysym.Shift-Control-C: perl:clipboard:copy
+*keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt*urlLauncher: /usr/bin/firefox
+URxvt.url-select.launcher: /usr/bin/firefox
+URxvt.underlineURLs: true
+URxvt.url-select.underline: true
+URxvt.urlButton: 1
+
+! Extra information
+URxvt*allow_bold: true
+URxvt*tint: darkGrey
+URxvt*cursorBlink: false
+URxvt*matcher.button: 1
+URxvt*tabbed.tabbar-fg: nord4
+URxvt*tabbed.tabbar-bg: nord1
+URxvt*tabbed.tab-fg: nord4
+URxvt*tabbed.tab-bg: nord1
+
+URxvt*colorIT: normalYellow
+URxvt*colorBD: normalRed
+URxvt*colorUL: normalYellow
